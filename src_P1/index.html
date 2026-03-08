@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Mujeres destacadas de la gastronomía española"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mujeres destacadas de la gastronomía española</title>
+
+    <!-- icono de página -->
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <!-- tipografía -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+
+  <body>
+    <!-- cabecera de página -->
+    <header>
+      <a href="index.html" class="logo">
+        <h1>Mujeres destacadas<br /><span>de la gastronomía española</span></h1>
+      </a>
+      <nav class="menu-movil">
+        <button aria-label="Abrir menú">☰</button>
+      </nav>
+      <nav class="menu-desktop" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="categoria.html">Todas</a>
+        <a href="links.html">Fuentes</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- portada -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Mujeres de la <br />gastronomía española</h1>
+          <p>
+            Un homenaje a las mujeres pioneras e innovadoras que destacan en la
+            gastronomía de todo el territorio nacional.
+          </p>
+          <a href="categoria.html" class="btn-primary">Mujeres destacadas</a>
+        </div>
+      </section>
+
+      <!-- destacados -->
+      <section class="destacados">
+        <div class="container">
+          <h2>Últimas entradas</h2>
+          <!-- tarjeta destacado montse guillen -->
+          <div class="cards-grid">
+            <article class="card">
+              <img
+                src="./img/montse_guillen.jpg"
+                alt="Montse Guillen, cuinera i artista"
+              />
+              <div class="card-content">
+                <h3>Montse Guillén</h3>
+                <p>
+                  Cocinera catalana pionera que abrió El Internacional (1984,
+                  Nueva York), introduciendo pa amb tomàquet y tapas catalanas
+                  en EE.UU.
+                </p>
+                <a href="det1.html" class="btn-secondary">Ver detalle</a>
+              </div>
+            </article>
+
+            <!-- tarjeta destacado maria gomez -->
+            <article class="card">
+              <img
+                src="./img/maria_gomez_magoga.jpg"
+                alt="Retrato de María Gómez, chef de Magoga"
+              />
+              <div class="card-content">
+                <h3>María Gómez</h3>
+                <p>
+                  Chef cartagenera con Estrella Michelin en Magoga, fusionando
+                  productos de la huerta murciana y el Mediterráneo.
+                </p>
+                <a href="det2.html" class="btn-secondary">Ver detalle</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer container">
+        <p>
+          &copy; 2026 Mujeres destacadas de la gastronomía española |
+          <a href="links.html">Fuentes y referencias</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
