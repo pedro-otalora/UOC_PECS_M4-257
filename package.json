@@ -3,26 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "browserslist": "last 10 years, not dead",
-
   "scripts": {
-    "parcel:dev": "parcel src_P1/index.html --dist-dir .parcel-temp --open",
-    "parcel:build": "parcel build src_P1/index.html --dist-dir dist --public-url ./",
-    "clean:dev": "rimraf .parcel-cache .parcel-temp",
-    "clean:prod": "rimraf dist .parcel-cache",
-    "start": "npm-run-all clean:dev parcel:dev",
-    "build": "npm-run-all clean:prod parcel:build"
+    "parcel:dev": "parcel src_P1/index.html --open",
+    "parcel:build": "parcel build src_P1/index.html --public-url ./",
+    "clean": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "cssnano": "^7.1.3",
+    "htmlnano": "^3.2.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.16.4",
+    "postcss": "^8.5.8",
     "posthtml-include": "^2.0.1",
-    "rimraf": "^6.1.3"
+    "rimraf": "^6.1.3",
+    "svgo": "^4.0.1",
+    "terser": "^5.46.0"
   },
   "dependencies": {
-    "smooth-scrollbar": "^8.8.4"
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/slim": "^3.9.1",
+    "animate.css": "^4.1.1",
+    "smooth-scrollbar": "^8.8.4",
+    "tsparticles": "^3.9.1"
   }
 }

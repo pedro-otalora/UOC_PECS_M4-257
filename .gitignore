@@ -3,7 +3,6 @@ dist/
 P1/
 P1/*
 .parcel-cache/
-.parcel-temp/
 .env
 *.log
 .DS_Store
