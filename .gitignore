@@ -1,6 +1,7 @@
 node_modules/
 dist/
 P1/
+P1/*
 .parcel-cache/
 .parcel-temp/
 .env
