@@ -1,5 +1,8 @@
 node_modules/
 dist/
+P1/
 .parcel-cache/
+.parcel-temp/
 .env
 *.log
+.DS_Store

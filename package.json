@@ -2,13 +2,15 @@
   "name": "pecs_m4-257",
   "version": "1.0.0",
   "description": "",
-  "source": "src_P1/index.html",
+  "browserslist": "last 10 years, not dead",
+
   "scripts": {
-    "parcel:dev": "parcel src_P1/index.html",
-    "parcel:build": "parcel build src_P1/index.html --dist-dir ./dist --public-url ./",
-    "clean": "rimraf dist .parcel-cache",
-    "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "parcel:dev": "parcel src_P1/index.html --dist-dir .parcel-temp --open",
+    "parcel:build": "parcel build src_P1/index.html --dist-dir dist --public-url ./",
+    "clean:dev": "rimraf .parcel-cache .parcel-temp",
+    "clean:prod": "rimraf dist .parcel-cache",
+    "start": "npm-run-all clean:dev parcel:dev",
+    "build": "npm-run-all clean:prod parcel:build"
   },
   "keywords": [],
   "author": "",

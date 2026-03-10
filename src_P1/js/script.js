@@ -1,6 +1,4 @@
-// ========================================
-// MENÚ HAMBURGUESA - MÍNIMO FUNCIONAL
-// ========================================
+// MENÚ HAMBURGUESA
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.querySelector(".menu-movil button");
   const menuDesktop = document.querySelector(".menu-desktop");
@@ -16,10 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// MODAL GALERÍA - MÍNIMO
+// MODAL GALERÍA
 document.addEventListener("click", (e) => {
   if (e.target.closest(".galeria-figure")) {
-    // ← CAMBIO AQUÍ
     const img = e.target
       .closest(".galeria-figure")
       .querySelector(".galeria-img");

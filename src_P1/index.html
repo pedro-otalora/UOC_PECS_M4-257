@@ -24,19 +24,7 @@
 
   <body>
     <!-- cabecera de página -->
-    <header>
-      <a href="index.html" class="logo">
-        <h1>Mujeres destacadas<br /><span>de la gastronomía española</span></h1>
-      </a>
-      <nav class="menu-movil">
-        <button aria-label="Abrir menú">☰</button>
-      </nav>
-      <nav class="menu-desktop" aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="categoria.html">Todas</a>
-        <a href="links.html">Fuentes</a>
-      </nav>
-    </header>
+    <include src="./src_P1/includes/header.html"></include>
 
     <main>
       <!-- portada -->
@@ -93,14 +81,8 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer container">
-        <p>
-          &copy; 2026 Mujeres destacadas de la gastronomía española |
-          <a href="links.html">Fuentes y referencias</a>
-        </p>
-      </div>
-    </footer>
+    <!-- <footer> --->
+    <include src="./src_P1/includes/footer.html"></include>
 
     <script src="./js/script.js"></script>
   </body>
