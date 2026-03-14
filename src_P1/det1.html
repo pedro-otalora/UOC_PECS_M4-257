@@ -18,7 +18,7 @@
     <!-- tipografía -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
     />
   </head>
   <body>
@@ -27,25 +27,35 @@
 
     <main>
       <!-- miga de pan -->
-      <nav aria-label="Breadcrumbs">
-        <a href="index.html">Inicio</a> >
-        <a href="categoria.html">Mujeres destacadas</a> >
-        <span>Montse Guillén</span>
+      <nav class="breadcrumb-nav" aria-label="Miga de pan">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html">Mujeres destacadas</a></li>
+          <li aria-current="page">Montse Guillén</li>
+        </ol>
       </nav>
 
       <article class="detalle">
         <div class="container">
+          <!-- título y subtítulo -->
+          <header class="header-interno">
+            <h1>Montse Guillén</h1>
+            <p class="header-interno-subtitulo">
+              MG Barcelona (<time datetime="1980">1980</time>)<br />El Internacional <abbr title="New York" lang="en">NY</abbr> (<time datetime="1984">1984</time>)
+            </p>
+          </header>
+
           <!-- imagen portada -->
-          <figure class="hero-figure">
+          <figure class="header-interno-figure">
             <img
               src="./img/montse_guillen.jpg"
-              alt="Montse Guillén, cuinera i artista"
+              alt="Montse Guillén"
+              class="header-interno-image"
               width="1200"
               height="600"
-              class="hero-image"
             />
             <figcaption class="img-caption">
-              Montse Guillén, cuinera i artista. Autor: Pere Virgili | Fuente:
+              <span lang="ca">Montse Guillén, cuinera i artista</span>. Autor: Pere Virgili | Fuente:
               <a
                 href="https://mengem.ara.cat/mengem/menjarem-insectes-n-segura_128_5024409.html"
                 target="_blank"
@@ -55,47 +65,62 @@
             </figcaption>
           </figure>
 
-          <!-- título y subtítulo -->
-          <header class="header-interno">
-            <h1>Montse Guillén Pijoan</h1>
-            <p class="subtitle">
-              MG Barcelona (1980) & El Internacional NY (1984) - Pionera tapas
-              USA
-            </p>
-          </header>
-
           <!-- biografía -->
           <section class="bio">
+            <h2 id="bio-title">Biografía y Trayectoria</h2>
             <p>
-              <strong>De Melilla a conquistar Nueva York.</strong> Montse
-              Guillén (1946-2025), hija restauradores Can Borrell (Meranges, ⭐
-              Michelin), se formó en La Venta (Tibidabo). Año 1980, mundo
-              masculino restauración, abrió **MG** calle Marià Cubí Barcelona:
-              cocina abierta, pescado crudo, diseño Xavier Mariscal/America
-              Sánchez. Referente nueva cocina catalana.
+              <strong
+                >Montse Guillén (<time datetime="1946">1946</time>-<time
+                  datetime="2025"
+                  >2025</time
+                >)</strong
+              >
+              no fue solo una cocinera, sino una visionaria que entendió la
+              gastronomía como una extensión del arte y la cultura. Formada en
+              el prestigioso restaurante familiar <i lang="ca">Can Borrell</i> y curtida en los
+              fogones de La Venta, desafió las convenciones de una industria
+              dominada por hombres. En 1980, inauguró en Barcelona el
+              restaurante <strong>MG</strong>, un espacio revolucionario donde
+              la cocina abierta permitía al comensal ser testigo del proceso
+              creativo, fusionando la excelencia del producto con un diseño
+              vanguardista firmado por artistas como Javier Mariscal.
             </p>
 
             <p>
-              1984, con pareja artista **Antoni Miralda**, fundó **El
-              Internacional Tapas Bar** TriBeCa NY: **primeras tapas/pa amb
-              tomàquet USA**. Éxito masivo artistas neoyorquinos, proyecto
-              arte-culinario que fusionó Barcelona-Manhattan. Expandió Miami,
-              Japón, Alemania, Buenos Aires.
+              Su salto a la escena internacional se consolidó en 1984 cuando,
+              junto a su pareja, el artista multidisciplinar
+              <strong>Antoni Miralda</strong>, fundó
+              <em>El Internacional Tapas Bar & Restaurant</em> en el barrio de
+              <span lang="en">TriBeCa</span>, Nueva York. Este establecimiento no solo fue el pionero
+              en introducir el concepto de <i>las tapas</i> y el <i lang="ca">"pa amb tomàquet"</i> en
+              Estados Unidos, sino que se convirtió en un epicentro de la
+              modernidad neoyorquina. Por sus mesas pasaron figuras de la talla
+              de Andy Warhol o Jean-Michel Basquiat, atraídos por una propuesta
+              que mezclaba la tradición catalana con instalaciones artísticas de
+              gran formato.
             </p>
 
             <p>
-              Cofundó **FoodCultura** (2000): sin ánimo lucro, explora
-              cocina-arte-ciencia preservando cultura culinaria. Falleció abril
-              2025, legando modernización catalana global. Inspiración: mujer
-              audaz rompió techos cristalizados.
+              Tras su etapa en Nueva York, Guillén continuó expandiendo su
+              filosofía a través de proyectos en Miami, Japón y Argentina,
+              siempre bajo la premisa de que la comida es un lenguaje universal.
+              En el año 2000, cofundó <strong>FoodCultura</strong>, una
+              fundación sin ánimo de lucro dedicada a investigar y preservar el
+              patrimonio culinario desde una perspectiva antropológica y
+              creativa. Su fallecimiento en abril de 2025 deja un legado
+              imborrable como la mujer que rompió techos de cristal y llevó la
+              identidad de la cocina catalana a las vitrinas del arte
+              contemporáneo mundial.
             </p>
           </section>
 
           <!-- receta -->
           <section class="receta">
-            <h2>Pa amb tomàquet (exportado NY 1984)</h2>
+            <header>
+              <h2><i lang="ca">Pa amb tomàquet</i> <small>(exportado <abbr title="New York" lang="en">NY</abbr> 1984)</small></h2>
+            </header>
             <!-- imagen receta -->
-            <figure class="img-caption-figure">
+            <figure class="receta-figure">
               <img
                 src="./img/pa_amb_tomaquet.jpg"
                 alt="Pa amb tomàquet"
@@ -115,72 +140,103 @@
             </figure>
 
             <div class="receta-grid">
-              <!-- columna 1 -->
-              <div class="ingredientes">
-                <h3>Ingredientes (4p)</h3>
+              <section class="ingredientes">
+                <h3>Ingredientes para el éxito</h3>
                 <ul>
-                  <li>Pagès rústico catalán (grueso)</li>
-                  <li>Tomates maduros rama</li>
-                  <li>Ajo fresco (opcional)</li>
-                  <li>AOVE calidad</li>
-                  <li>Sal Maldon</li>
+                  <li>
+                    <strong>Pan de <i lang="ca">Pagès</i>:</strong> Rebanadas anchas de hogaza de
+                    costra crujiente y miga alveolada.
+                  </li>
+                  <li>
+                    <strong>Tomates de rama (<i lang="ca">de ramet</i>):</strong> Maduros, con
+                    mucha pulpa y poca agua.
+                  </li>
+                  <li>
+                    <strong>Aceite de Oliva Virgen Extra:</strong> De variedad
+                    Argudell o Arbequina para un sabor auténtico.
+                  </li>
+                  <li>
+                    <strong>Ajo morado:</strong> Un diente firme para aromatizar
+                    la base.
+                  </li>
+                  <li>
+                    <strong>Sal:</strong> Preferiblemente en escamas (Maldon) o
+                    marina gruesa.
+                  </li>
                 </ul>
-              </div>
-              <!-- columna 2 -->
-              <div class="preparacion">
-                <h3>Preparación (Miralda-Guillén)</h3>
+              </section>
+              <section class="preparacion">
+                <h3>El Ritual de Montse Guillén</h3>
                 <ol>
-                  <li>Tostar pagès fuego/horno</li>
-                  <li>Frotar ajo (sutil), partir tomate mitad</li>
-                  <li>"Exprimir" tomate hasta miga saturada</li>
-                  <li>Chorro AOVE generoso + sal escamas</li>
+                  <li>
+                    Dorar el pan de <i lang="ca">pagès</i>, preferiblemente a la brasa, hasta que
+                    la corteza esté crujiente y el interior tierno.
+                  </li>
+                  <li>
+                    Frotar suavemente un diente de ajo sobre la miga caliente
+                    para que libere sus aceites esenciales.
+                  </li>
+                  <li>
+                    Cortar el tomate y restregarlo con firmeza hasta que la miga
+                    quede saturada de pulpa y color.
+                  </li>
+                  <li>
+                    Añadir un chorro generoso de <abbr title="Aceite de Oliva Virgen Extra">AOVE</abbr> en espiral y rematar con
+                    unas escamas de sal Maldon.
+                  </li>
                 </ol>
-              </div>
+              </section>
             </div>
           </section>
 
           <!-- galeria de imagenes -->
           <section class="galeria">
             <h2>Galería</h2>
-            <div class="galeria-grid">
+            <ul class="galeria-grid">
               <!-- imagen 1 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/montse_guillen_1.jpg"
-                  alt="Montse Guillén junto a su pareja, Antoni Miralda"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>
-                  Montse con Antoni Miralda, su pareja artística
-                </figcaption>
-              </figure>
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/montse_guillen_1.jpg"
+                    alt="Montse con Antoni Miralda, su pareja artística"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>
+                    Montse con Antoni Miralda, su pareja artística
+                  </figcaption>
+                </figure>
+              </li>
 
               <!-- imagen 2 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/montse_guillen_2.jpg"
-                  alt="La cuinera Montse Guillén va passar pel programa Bàsics, de betevé"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>Montse en programa Bàsics (betevé)</figcaption>
-              </figure>
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/montse_guillen_2.jpg"
+                    alt="Montse en programa Bàsics (betevé)"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>Montse en programa Bàsics (betevé)</figcaption>
+                </figure>
+              </li>
 
               <!-- imagen 3 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/montse_guillen_3.jpg"
-                  alt="MG, el restaurant de Guillén a Barcelona"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>MG Restaurant, Barcelona (1980)</figcaption>
-              </figure>
-            </div>
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/montse_guillen_3.jpg"
+                    alt="MG Restaurant, Barcelona (1980)"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>MG Restaurant, Barcelona (1980)</figcaption>
+                </figure>
+              </li>
+            </ul>
 
             <!-- modal imagen en grande -->
             <div class="modal-galeria">
@@ -194,12 +250,12 @@
           </section>
 
           <!-- Vídeo -->
-          <section class="video">
+          <div class="video">
             <figure class="video-figure">
               <div class="video-wrapper">
                 <iframe
-                  src="https://www.youtube.com/embed/5el56BQ2qGk"
-                  title="Montse Guillén: pionera cocina catalana internacional"
+                  src="https://www.youtube.com/embed/FzXJkKQkNX4?si=zCpwifUWt-_UTism"
+                  title="Angel Casas Show || Montse Guillen"
                   width="560"
                   height="315"
                   allow="
@@ -215,16 +271,16 @@
                 >
                 </iframe>
               </div>
-              <figcaption>
-                Montse Guillén: pionera internacional | YouTube
+              <figcaption lang="ca">
+                Entrevista Montse Guillen a TV3 , <time datetime="1985">1985</time> (en català)
               </figcaption>
             </figure>
-          </section>
+          </div>
         </div>
       </article>
 
       <!-- fuentes -->
-      <section class="fuentes container">
+      <aside class="fuentes container">
         <h2>Fuentes y créditos</h2>
 
         <!-- enlaces páginas web -->
@@ -246,7 +302,7 @@
             <a
               href="https://beteve.cat/cultura/mor-montse-guillen-cuinera-artista/"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="ca"
               >Mor Montse Guillén, la cuinera que va portar el pa amb tomàquet i
               el porró a Nova York</a
             >
@@ -257,7 +313,7 @@
             <a
               href="https://beteve.cat/basics/arxiu-barcelona-montse-guillen-cuinera-iconic-bar-tapes-internacional-nova-york/"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="ca"
               >Arxiu Barcelona: Montse Guillén, la cuinera que va fer tastar la
               botifarra amb mongetes a Warhol
             </a>
@@ -269,18 +325,18 @@
               href="https://www.lavanguardia.com/comer/20250420/10599568/cocinera-montse-guillen-muere-79-anos.html"
               target="_blank"
               rel="noopener"
-              >Muere Montse Guillén, la cocinera que introdujo el 'pa amb
-              tomàquet' en Nueva York, a los 79 años</a
-            >
+              >Muere Montse Guillén, la cocinera que introdujo el <span lang="ca">'pa amb
+              tomàquet'</span> en Nueva York, a los 79 años</a
+            > <span class="fuentes-fecha">(<time datetime="2025-04-20">20/04/2025</time>)</span>
           </li>
           <!-- enlace web -->
           <li>
-            <span class="fuentes-bold">Mengem (ARA):</span>
+            <span class="fuentes-bold" lang="ca">Mengem (ARA):</span>
             <a
               href="https://mengem.ara.cat/mengem/menjarem-insectes-n-segura_128_5024409.html"
               target="_blank"
               rel="noopener"
-              >Entrevista Montse Guillén: "Menjarem insectes, n’estic segura”</a
+              >Entrevista Montse Guillén: <span lang="ca">"Menjarem insectes, n’estic segura”</span></a
             >
           </li>
           <!-- enlace web -->
@@ -289,8 +345,18 @@
             <a
               href="https://ca.wikipedia.org/wiki/Pa_amb_tom%C3%A0quet"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="ca"
               >Pa amb tomàquet</a
+            >
+          </li>
+          <!-- enlace video -->
+          <li>
+            <span class="fuentes-bold">TV3:</span>
+            <a
+              href="https://www.youtube.com/embed/FzXJkKQkNX4?si=zCpwifUWt-_UTism"
+              target="_blank"
+              rel="noopener"
+              >Entrevista Montse Guillen a <span lang="ca">TV3</span>, 1985 (<span lang="ca">en català</span>)</a
             >
           </li>
         </ul>
@@ -300,18 +366,18 @@
         <ul>
           <!-- créditos -->
           <li>
-            <span class="fuentes-bold">Portada: </span>Montse Guillén, cuinera i
-            artista | Pere Virgili |
+            <span class="fuentes-bold">Portada: </span><span lang="ca">Montse Guillén, cuinera i
+            artista | Pere Virgili | </span>
             <a
               href="https://mengem.ara.cat/mengem/menjarem-insectes-n-segura_128_5024409.html"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="ca"
               >Mengem! (ARA)</a
             >
           </li>
           <!-- créditos -->
           <li>
-            <span class="fuentes-bold">Receta: </span>Pa amb tomàquet | Mutari |
+            <span class="fuentes-bold">Receta: </span><span lang="ca">Pa amb tomàquet</span> | Mutari |
             <a
               href="https://commons.wikimedia.org/w/index.php?curid=2920292"
               target="_blank"
@@ -322,7 +388,7 @@
           <!-- créditos -->
           <li>
             <span class="fuentes-bold">Galería 1: </span>Montse Guillén con
-            Antoni Miralda (Libertine 2017) |
+            Antoni Miralda (Libertine <time datetime="2017">2017</time>) |
             <a
               href="https://www.lavanguardia.com/comer/20250420/10599568/cocinera-montse-guillen-muere-79-anos.html"
               target="_blank"
@@ -332,7 +398,7 @@
           </li>
           <!-- créditos -->
           <li>
-            <span class="fuentes-bold">Galería 2: </span>Montse Guillén | Bàsics
+            <span class="fuentes-bold">Galería 2: </span>Montse Guillén | <span lang="ca">Bàsics</span>
             |
             <a
               href="https://beteve.cat/cultura/mor-montse-guillen-cuinera-artista/"
@@ -343,16 +409,16 @@
           </li>
           <!-- créditos -->
           <li>
-            <span class="fuentes-bold">Galería 3: </span>MG Restaurant (1980) |
+            <span class="fuentes-bold">Galería 3: </span>MG Restaurant (<time datetime="1980">1980</time>) |
             <a
               href="https://beteve.cat/basics/arxiu-barcelona-montse-guillen-cuinera-iconic-bar-tapes-internacional-nova-york/"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="ca"
               >betevé Bàsics</a
             >
           </li>
         </ul>
-      </section>
+      </aside>
     </main>
 
     <!-- <footer> --->

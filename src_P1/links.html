@@ -2,10 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Fuentes - Gastronomía en femenino"
-    />
+    <meta name="description" content="Fuentes - Gastronomía en femenino" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fuentes - Gastronomía en femenino</title>
 
@@ -18,33 +15,42 @@
     <!-- tipografía -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
     />
   </head>
 
   <body>
-        <!-- cabecera de página -->
+    <!-- cabecera de página -->
     <include src="./src_P1/includes/header.html"></include>
 
     <main>
       <!-- miga de pan -->
-      <nav aria-label="Breadcrumbs">
-        <a href="index.html">Inicio</a> > <span>Fuentes</span>
+      <nav class="breadcrumb-nav" aria-label="Miga de pan">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li aria-current="page">Fuentes</li>
+        </ol>
       </nav>
 
       <!-- fuentes -->
-      <section class="fuentes container">
+      <!-- <section class="fuentes container"> -->
+      <section class="hero-general">
         <h1>Fuentes y referencias</h1>
-        <p class="fuentes-intro">
+        <!-- <p class="fuentes-intro"> -->
+        <p>
           En esta página se recogen las fuentes consultadas y los créditos de
           autoría de textos, recetas e imágenes utilizados en el proyecto
           <em>Gastronomía en femenino</em>.
         </p>
+      </section>
 
+      <div>
         <!-- montse guillen -->
-        <article class="fuente-bloque">
+        <article class="fuentes container">
           <h2>Montse Guillén</h2>
 
+          <!-- enlaces páginas web -->
+          <h3>Texto y receta</h3>
           <ul>
             <!-- enlace web -->
             <li>
@@ -63,6 +69,7 @@
                 href="https://beteve.cat/cultura/mor-montse-guillen-cuinera-artista/"
                 target="_blank"
                 rel="noopener"
+                lang="ca"
                 >Mor Montse Guillén, la cuinera que va portar el pa amb tomàquet
                 i el porró a Nova York</a
               >
@@ -74,6 +81,7 @@
                 href="https://beteve.cat/basics/arxiu-barcelona-montse-guillen-cuinera-iconic-bar-tapes-internacional-nova-york/"
                 target="_blank"
                 rel="noopener"
+                lang="ca"
                 >Arxiu Barcelona: Montse Guillén, la cuinera que va fer tastar
                 la botifarra amb mongetes a Warhol
               </a>
@@ -85,19 +93,23 @@
                 href="https://www.lavanguardia.com/comer/20250420/10599568/cocinera-montse-guillen-muere-79-anos.html"
                 target="_blank"
                 rel="noopener"
-                >Muere Montse Guillén, la cocinera que introdujo el 'pa amb
-                tomàquet' en Nueva York, a los 79 años</a
+                >Muere Montse Guillén, la cocinera que introdujo el
+                <span lang="ca">'pa amb tomàquet'</span> en Nueva York, a los 79
+                años</a
+              >
+              <span class="fuentes-fecha"
+                >(<time datetime="2025-04-20">20/04/2025</time>)</span
               >
             </li>
             <!-- enlace web -->
             <li>
-              <span class="fuentes-bold">Mengem (ARA):</span>
+              <span class="fuentes-bold" lang="ca">Mengem (ARA):</span>
               <a
                 href="https://mengem.ara.cat/mengem/menjarem-insectes-n-segura_128_5024409.html"
                 target="_blank"
                 rel="noopener"
-                >Entrevista Montse Guillén: "Menjarem insectes, n’estic
-                segura”</a
+                >Entrevista Montse Guillén:
+                <span lang="ca">"Menjarem insectes, n’estic segura”</span></a
               >
             </li>
             <!-- enlace web -->
@@ -107,7 +119,19 @@
                 href="https://ca.wikipedia.org/wiki/Pa_amb_tom%C3%A0quet"
                 target="_blank"
                 rel="noopener"
+                lang="ca"
                 >Pa amb tomàquet</a
+              >
+            </li>
+            <!-- enlace video -->
+            <li>
+              <span class="fuentes-bold">TV3:</span>
+              <a
+                href="https://www.youtube.com/embed/FzXJkKQkNX4?si=zCpwifUWt-_UTism"
+                target="_blank"
+                rel="noopener"
+                >Entrevista Montse Guillen a <span lang="ca">TV3</span>, 1985
+                (<span lang="ca">en català</span>)</a
               >
             </li>
           </ul>
@@ -117,19 +141,22 @@
           <ul>
             <!-- créditos -->
             <li>
-              <span class="fuentes-bold">Portada: </span>Montse Guillén, cuinera
-              i artista | Pere Virgili |
+              <span class="fuentes-bold">Portada: </span
+              ><span lang="ca"
+                >Montse Guillén, cuinera i artista | Pere Virgili |
+              </span>
               <a
                 href="https://mengem.ara.cat/mengem/menjarem-insectes-n-segura_128_5024409.html"
                 target="_blank"
                 rel="noopener"
+                lang="ca"
                 >Mengem! (ARA)</a
               >
             </li>
             <!-- créditos -->
             <li>
-              <span class="fuentes-bold">Receta: </span>Pa amb tomàquet | Mutari
-              |
+              <span class="fuentes-bold">Receta: </span
+              ><span lang="ca">Pa amb tomàquet</span> | Mutari |
               <a
                 href="https://commons.wikimedia.org/w/index.php?curid=2920292"
                 target="_blank"
@@ -140,7 +167,7 @@
             <!-- créditos -->
             <li>
               <span class="fuentes-bold">Galería 1: </span>Montse Guillén con
-              Antoni Miralda (Libertine 2017) |
+              Antoni Miralda (Libertine <time datetime="2017">2017</time>) |
               <a
                 href="https://www.lavanguardia.com/comer/20250420/10599568/cocinera-montse-guillen-muere-79-anos.html"
                 target="_blank"
@@ -151,7 +178,8 @@
             <!-- créditos -->
             <li>
               <span class="fuentes-bold">Galería 2: </span>Montse Guillén |
-              Bàsics |
+              <span lang="ca">Bàsics</span>
+              |
               <a
                 href="https://beteve.cat/cultura/mor-montse-guillen-cuinera-artista/"
                 target="_blank"
@@ -161,12 +189,15 @@
             </li>
             <!-- créditos -->
             <li>
-              <span class="fuentes-bold">Galería 3: </span>MG Restaurant (1980)
-              |
+              <span class="fuentes-bold">Galería 3: </span>MG Restaurant (<time
+                datetime="1980"
+                >1980</time
+              >) |
               <a
                 href="https://beteve.cat/basics/arxiu-barcelona-montse-guillen-cuinera-iconic-bar-tapes-internacional-nova-york/"
                 target="_blank"
                 rel="noopener"
+                lang="ca"
                 >betevé Bàsics</a
               >
             </li>
@@ -174,7 +205,7 @@
         </article>
 
         <!-- maría gómez -->
-        <article class="fuente-bloque">
+        <article class="fuentes container">
           <h2>María Gómez</h2>
 
           <!-- enlaces páginas web -->
@@ -202,7 +233,7 @@
             </li>
             <!-- enlace web -->
             <li>
-              <span class="fuentes-bold">Facefoodmag:</span>
+              <span class="fuentes-bold" lang="en">Facefoodmag:</span>
               <a
                 href="https://facefoodmag.com/magazine/maria-gomez-equilibrio-campo-cartagena-mediterraneo"
                 target="_blank"
@@ -228,8 +259,22 @@
                 href="https://www.elperiodico.com/es/gastronomia/20231221/menu-ano-nuevo-recetas-pescado-originales-117863185"
                 target="_blank"
                 rel="noopener"
-                >Marinero y muy original: prepara un menú con estrella Michelin
-                para Año Nuevo</a
+                >Marinero y muy original: prepara un menú con estrella
+                <span lang="fr"><i>Michelin</i></span> para Año Nuevo</a
+              >
+              <span class="fuentes-fecha"
+                >(<time datetime="2023-12-21">21/12/2023</time>)</span
+              >
+            </li>
+            <!-- enlace video -->
+            <li>
+              <span class="fuentes-bold">La 7 (TV Autonómica de Murcia):</span>
+              <a
+                href="https://www.youtube.com/watch?v=B0dpt86j3IE"
+                target="_blank"
+                rel="noopener"
+                >Entrevista a María Gómez: El alma de Magoga y su reconocimiento
+                <span lang="fr"><i>Michelin</i></span></a
               >
             </li>
           </ul>
@@ -277,6 +322,7 @@
                 href="https://facefoodmag.com/fotos/blog/chef-maria-gomez-arrozal-calasparra.jpg"
                 target="_blank"
                 rel="noopener"
+                lang="en"
                 >Facefoodmag</a
               >
             </li>
@@ -295,7 +341,7 @@
         </article>
 
         <!-- Otros enlaces -->
-        <article class="fuente-bloque">
+        <article class="fuentes container">
           <h2>Otras fuentes</h2>
 
           <!-- enlaces páginas web -->
@@ -313,8 +359,56 @@
               >
             </li>
           </ul>
+
+          <!-- enlaces páginas web -->
+          <h3>Logotipo de cabecera</h3>
+          <ul>
+            <!-- enlace web -->
+            <li>
+              <span class="fuentes-bold">Freepik.com:</span>
+              <a
+                href="https://www.flaticon.es/iconos-gratis/cocinero"
+                target="_blank"
+                rel="noopener"
+                title="cocinero iconos"
+                >Cocinero iconos creados por Freepik - Flaticon</a
+              >
+            </li>
+            <!-- enlace web -->
+            <li>
+              <span class="fuentes-bold">Freepik.com:</span>
+              <a
+                href="https://www.flaticon.es/iconos-gratis/feminismo"
+                target="_blank"
+                rel="noopener"
+                title="feminismo iconos"
+                >Feminismo iconos creados por Freepik - Flaticon</a
+              >
+            </li>
+          </ul>
+
+          <!-- enlaces páginas web -->
+          <h3>Uso de herramientas IA</h3>
+          <ul>
+            <!-- enlace web -->
+            <li>
+              <p>
+                Para la elaboración de los contenidos biográficos y descriptivos
+                de las secciones de detalle de las chefs, se han utilizado
+                herramientas de <strong>IA generativa</strong> como apoyo en la
+                síntesis y redacción inicial de la información a partir de las
+                fuentes seleccionadas.
+              </p>
+              <p>
+                Todos los textos generados han sido finalmente revisados,
+                contrastados y editados manualmente para garantizar la veracidad
+                de los datos y su adecuación al proyecto.
+              </p>
+            </li>
+          </ul>
         </article>
-      </section>
+      </div>
+      <!-- </section> -->
     </main>
 
     <!-- <footer> --->

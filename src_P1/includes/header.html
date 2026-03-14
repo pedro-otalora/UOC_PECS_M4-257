@@ -1,14 +1,34 @@
-    <!-- header.html - bloque independiente -->
-    <header>
-      <a href="index.html" class="logo">
-        <h1>Gastronomía<br /><span>en femenino</span></h1>
-      </a>
-      <nav class="menu-movil">
-        <button aria-label="Abrir menú">☰</button>
-      </nav>
-      <nav class="menu-desktop" aria-label="Navegación principal">
-        <a href="index.html">Inicio</a>
-        <a href="categoria.html">Todas</a>
-        <a href="links.html">Fuentes</a>
-      </nav>
-    </header>
+<!-- header.html - bloque independiente -->
+
+<header class="main-header">
+  <!-- <a href="index.html" class="logo">
+    Gastronomía<span>en femenino</span> </a> -->
+
+  <a href="index.html" class="logo">
+    <img
+      src="./img/logo_GF.png"
+      alt="Logo de Gastronomía en femenino"
+      class="logo-img"
+    />
+    <div class="logo-text">Gastronomía<span>en femenino</span></div>
+  </a>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <button
+      class="menu-movil-toggle"
+      aria-label="Abrir menú"
+    >
+      ☰
+    </button>
+
+    <ul class="menu-links">
+      <li>
+        <a class="hvr-float-shadow" href="index.html">Inicio</a>
+      </li>
+      <li>
+        <a class="hvr-float-shadow" href="categoria.html">Mujeres destacadas</a>
+      </li>
+      <li><a class="hvr-float-shadow" href="links.html">Fuentes</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,7 +1,7 @@
 // MENÚ HAMBURGUESA
 document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.querySelector(".menu-movil button");
-  const menuDesktop = document.querySelector(".menu-desktop");
+  const menuBtn = document.querySelector(".menu-movil-toggle");
+  const menuDesktop = document.querySelector(".menu-links");
 
   menuBtn.addEventListener("click", function (e) {
     e.stopPropagation();
@@ -28,10 +28,16 @@ document.addEventListener("click", (e) => {
   }
   if (
     e.target.classList.contains("modal-cerrar") ||
-    e.target.classList.contains("modal-galeria") ||
-    e.target.classList.contains("modal-img")
+    e.target.classList.contains("modal-galeria") 
   ) {
     e.target.closest(".modal-galeria").classList.remove("mostrar");
     document.body.style.overflow = "";
+  }
+});
+
+// PASA LA PÁGINA ACTUAL A aria-current
+document.querySelectorAll('.menu-links a').forEach(link => {
+  if (link.href === window.location.href) {
+    link.setAttribute('aria-current', 'page');
   }
 });

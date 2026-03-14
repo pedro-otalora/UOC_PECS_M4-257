@@ -2,10 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="María Gómez - Gastronomía en femenino"
-    />
+    <meta name="description" content="María Gómez - Gastronomía en femenino" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>María Gómez - Gastronomía en femenino</title>
 
@@ -18,32 +15,46 @@
     <!-- tipografía -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
     />
   </head>
 
   <body>
-        <!-- cabecera de página -->
+    <!-- cabecera de página -->
     <include src="./src_P1/includes/header.html"></include>
 
     <main>
       <!-- miga de pan -->
-      <nav aria-label="Breadcrumbs">
-        <a href="index.html">Inicio</a> >
-        <a href="categoria.html">Mujeres destacadas</a> >
-        <span>María Gómez</span>
+      <nav class="breadcrumb-nav" aria-label="Miga de pan">
+        <ol>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html">Mujeres destacadas</a></li>
+          <li aria-current="page">María Gómez</li>
+        </ol>
       </nav>
 
       <article class="detalle">
         <div class="container">
+          <!-- título y subtítulo -->
+          <header class="header-interno">
+            <h1>María Gómez</h1>
+            <p class="header-interno-subtitulo">
+              Magoga Cartagena (<time datetime="2014">2014</time>)<br />*
+              Estrella <span lang="fr"><i>Michelin</i></span> (<time
+                datetime="2020"
+                >2020</time
+              >)
+            </p>
+          </header>
+
           <!-- imagen portada -->
-          <figure class="hero-figure">
+          <figure class="header-interno-figure">
             <img
               src="./img/maria_gomez_magoga.jpg"
               alt="María Gómez, chef de Magoga en Cartagena"
+              class="header-interno-image"
               width="1200"
               height="600"
-              class="hero-image"
             />
             <figcaption class="img-caption">
               María Gómez, chef de Magoga. | Fuente:
@@ -56,41 +67,58 @@
             </figcaption>
           </figure>
 
-          <!-- título y subtítulo -->
-          <header class="header-interno">
-            <h1>María Gómez</h1>
-            <p class="subtitle">
-              Magoga Cartagena (2014) - 1⭐ Michelin, equilibrio huerta-mar
-            </p>
-          </header>
-
           <!-- biografía -->
           <section class="bio">
+            <h2 id="bio-title">Biografía y Trayectoria</h2>
             <p>
-              <strong>De Fuente Álamo a Estrella Michelin.</strong> María Gómez
-              (1987), formada en AIALA Karlos Arguiñano y Basque Culinary
-              Center, abrió Magoga (2014) en Cartagena con Adrián de Marcos:
-              evolución de casa de comidas a referente con 1⭐ Michelin y 2
-              Soles Repsol, exaltando Campo de Cartagena [web:1][web:3].
+              <strong
+                >De la tradición familiar a la cima de la gastronomía.</strong
+              >
+              María Gómez (1987) creció en Fuente Álamo, rodeada de la riqueza
+              agrícola del Campo de Cartagena. Su formación en centros de
+              prestigio como
+              <abbr title="Escuela de Hostelería y Restaurante de Karlos Arguiñano">AIALA</abbr> (la
+              escuela de Karlos Arguiñano) y el
+              <span lang="en">Basque Culinary Center</span> forjó una técnica
+              impecable que hoy aplica a sus raíces. En 2014, junto a Adrián de
+              Marcos, convirtió una antigua casa de comidas en
+              <strong>Magoga</strong>, un proyecto que ha evolucionado hasta
+              alcanzar la prestigiosa <strong>Estrella <span lang="fr"><i>Michelin</i></span></strong> y dos
+              Soles Repsol, transformando la ciudad de Cartagena en un destino
+              gastronómico de primer orden.
             </p>
+
             <p>
-              Inspirada por su abuela y tradición agrícola murciana, fusiona
-              vanguardia-tradición: arroz Calasparra, gamba roja, salmorreta.
-              Equilibrio huerta-medio mar Mediterráneo, finalista Cocinero
-              Revelación Madrid Fusión 2019 [web:2][web:7].
+              La cocina de María es un homenaje constante a su entorno
+              inmediato. Inspirada por las recetas de su abuela y el producto
+              local, su propuesta se basa en el equilibrio entre la huerta y el
+              mar. Es una firme defensora de tesoros regionales como el
+              <strong>arroz de Calasparra</strong>, la gamba roja de la costa
+              murciana y la <i>salmorreta</i>. Su capacidad para elevar ingredientes
+              humildes a la categoría de arte culinario la llevó a ser finalista
+              como Cocinero Revelación en Madrid Fusión 2019, consolidándose
+              como una de las voces más brillantes de su generación.
             </p>
+
             <p>
-              Premios: Cartagenera del Año 2022/2023, Jóvenes Empresarios
-              CaixaBank. Pionera joven que proyecta gastronomía murciana global,
-              reivindicando conciliación femenina [web:3][web:6].
+              Más allá de los fogones, María Gómez se ha convertido en un
+              referente de emprendimiento y liderazgo femenino. Reconocida como
+              <strong>Cartagenera del Año 2022</strong> y premiada por su
+              trayectoria empresarial, utiliza su plataforma para reivindicar la
+              conciliación en la hostelería y la visibilidad de las mujeres en
+              puestos de mando. Su legado en Magoga no es solo una experiencia
+              sensorial, sino un manifiesto de amor por el territorio murciano y
+              una proyección de su cultura hacia el escenario global.
             </p>
           </section>
 
           <!-- receta -->
           <section class="receta">
-            <h2>Quisquilla con salsa de pimiento amarillo</h2>
+            <header>
+              <h2>Quisquilla con salsa de pimiento amarillo</h2>
+            </header>
             <!-- imagen receta -->
-            <figure class="img-caption-figure">
+            <figure class="receta-figure">
               <img
                 src="./img/gambas_con_crema_pimiento_amarillo.jpg"
                 alt="Quisquilla con salsa de pimiento amarillo"
@@ -109,107 +137,127 @@
               </figcaption>
             </figure>
             <div class="receta-grid">
-              <!-- columna 1 -->
-              <div class="ingredientes">
-                <h3>Ingredientes (4p)</h3>
+              <section class="ingredientes">
+                <h3>Ingredientes (Territorio y Mar)</h3>
                 <ul>
-                  <li>750 g de quisquillas</li>
-                  <li>25 g de pimiento verde en brunoise</li>
-                  <li>20 g de cebolla morada en juliana</li>
-                  <li>60 g de mini calabacín laminado</li>
-                  <li>12 láminas de mini mazorca de maíz</li>
-                  <li>12 g de cilantro</li>
-                  <li>Harina de trigo</li>
-                  <li>Aceite de girasol</li>
-                  <li>Ralladura de lima</li>
                   <li>
-                    <strong>Salsa:</strong> 900 g pimiento amarillo, 15 g
-                    cilantro, media cebolleta, 10 g salsa sriracha, 15 g sal,
-                    500 g leche almendras, 70 ml zumo limón, 70 ml zumo lima
+                    <strong>Quisquillas frescas:</strong> 750 g de ejemplares de
+                    la costa de Cartagena.
+                  </li>
+                  <li>
+                    <strong>Base Vegetal:</strong> Pimiento verde <i lang="fr">brunoise</i>,
+                    cebolla morada y mini calabacín.
+                  </li>
+                  <li>
+                    <strong>Texturas:</strong> Láminas de mini mazorca y
+                    cilantro fresco.
+                  </li>
+                  <li>
+                    <strong>Sinfonía Amarilla:</strong> 900 g de pimientos
+                    amarillos, <i lang="en">sriracha</i>, cilantro y cebolleta.
+                  </li>
+                  <li>
+                    <strong>Toque lácteo:</strong> 500 g de leche de almendras
+                    (guiño a la tradición murciana).
+                  </li>
+                  <li>
+                    <strong>Cítricos:</strong> Zumo de limón y lima para la
+                    acidez necesaria.
                   </li>
                 </ul>
-              </div>
-              <!-- columna 2 -->
-              <div class="preparacion">
-                <h3>Preparación</h3>
+              </section>
+              <section class="preparacion">
+                <h3>Elaboración Paso a Paso</h3>
                 <ol>
-                  <li>Limpiar y descascarillar las quisquillas. Reservar.</li>
                   <li>
-                    Asar pimientos, limón y lima en horno hasta dorados. Pelar
-                    pimientos, triturar con zumos, añadir resto ingredientes,
-                    triturar, colar y reservar salsa.
+                    Pelar los cuerpos de las quisquillas y reservar las cabezas
+                    más grandes para la fritura.
                   </li>
                   <li>
-                    Enharinar 4 cabezas de quisquilla, freír en aceite girasol,
-                    reservar en papel absorbente.
+                    Asar pimientos amarillos y cítricos; triturar con leche de
+                    almendras y <i lang="en">sriracha</i> hasta obtener una crema fina.
                   </li>
                   <li>
-                    Emplatar: base de salsa pimiento amarillo, cabeza frita en
-                    centro, 3 quisquillas alrededor con pimiento verde, cebolla,
-                    calabacín, mazorcas y cilantro. Ralladura lima.
+                    Enharinar ligeramente las cabezas reservadas y freír en
+                    aceite muy caliente hasta que resulten crujientes.
+                  </li>
+                  <li>
+                    Disponer la salsa como base, colocar la cabeza frita en el
+                    centro y rodear con los cuerpos, las verduras y la lima.
                   </li>
                 </ol>
-              </div>
+              </section>
             </div>
           </section>
 
           <!-- galería de imágenes -->
           <section class="galeria">
             <h2>Galería</h2>
-            <div class="galeria-grid">
+            <ul class="galeria-grid">
               <!-- imagen 1 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/maria_gomez_magoga_1.jpg"
-                  alt="María Gómez y Adrián de Marcos, Magoga"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>
-                  María con Adrián de Marcos, su pareja profesional
-                </figcaption>
-              </figure>
-
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/maria_gomez_magoga_1.jpg"
+                    alt="María Gómez y Adrián de Marcos, Magoga"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>
+                    María con Adrián de Marcos, su pareja profesional
+                  </figcaption>
+                </figure>
+              </li>
               <!-- imagen 2 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/maria_gomez_magoga_2.jpg"
-                  alt="María Gómez en cocina Magoga"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>María en acción, Magoga Cartagena</figcaption>
-              </figure>
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/maria_gomez_magoga_2.jpg"
+                    alt="María Gómez en cocina Magoga"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>María en acción, Magoga Cartagena</figcaption>
+                </figure>
+              </li>
 
               <!-- imagen 3 -->
-              <figure class="galeria-figure">
-                <img
-                  src="./img/maria_gomez_magoga_3.jpg"
-                  alt="María Gómez y Adrián de Marcos, Magoga"
-                  width="400"
-                  height="300"
-                  class="galeria-img"
-                />
-                <figcaption>María Gómez y Adrián de Marcos, Magoga</figcaption>
-              </figure>
-            </div>
+              <li class="galeria-item">
+                <figure class="galeria-figure">
+                  <img
+                    src="./img/maria_gomez_magoga_3.jpg"
+                    alt="María Gómez y Adrián de Marcos, Magoga"
+                    width="400"
+                    height="300"
+                    class="galeria-img"
+                  />
+                  <figcaption>
+                    María Gómez y Adrián de Marcos, Magoga
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
 
             <!-- modal imagen en grande -->
             <div class="modal-galeria">
               <span class="modal-cerrar">&times;</span>
-              <img class="modal-img" src="./img/placeholder.jpg" alt="Imagen ampliada" />
+              <img
+                class="modal-img"
+                src="./img/placeholder.jpg"
+                alt="Imagen ampliada"
+              />
             </div>
           </section>
 
           <!-- Vídeo -->
-          <section class="video">
+          <div class="video">
             <figure class="video-figure">
               <div class="video-wrapper">
                 <iframe
                   src="https://www.youtube.com/embed/B0dpt86j3IE"
-                  title="María Gómez, chef Magoga estrella Michelin"
+                  title="Entrevista a María Gómez en La 7: Trayectoria y Estrella Michelin"
                   width="560"
                   height="315"
                   allow="
@@ -224,14 +272,16 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <figcaption>María Gómez en Magoga | YouTube</figcaption>
+              <figcaption>
+                Entrevista a María Gómez en La 7 | Fuente: YouTube
+              </figcaption>
             </figure>
-          </section>
+          </div>
         </div>
       </article>
 
       <!-- fuentes -->
-      <section class="fuentes container">
+      <aside class="fuentes container">
         <h2>Fuentes y créditos</h2>
 
         <!-- enlaces páginas web -->
@@ -259,7 +309,7 @@
           </li>
           <!-- enlace web -->
           <li>
-            <span class="fuentes-bold">Facefoodmag:</span>
+            <span class="fuentes-bold" lang="en">Facefoodmag:</span>
             <a
               href="https://facefoodmag.com/magazine/maria-gomez-equilibrio-campo-cartagena-mediterraneo"
               target="_blank"
@@ -285,8 +335,22 @@
               href="https://www.elperiodico.com/es/gastronomia/20231221/menu-ano-nuevo-recetas-pescado-originales-117863185"
               target="_blank"
               rel="noopener"
-              >Marinero y muy original: prepara un menú con estrella Michelin
+              >Marinero y muy original: prepara un menú con estrella <span lang="fr"><i>Michelin</i></span>
               para Año Nuevo</a
+            >
+            <span class="fuentes-fecha"
+              >(<time datetime="2023-12-21">21/12/2023</time>)</span
+            >
+          </li>
+          <!-- enlace video -->
+          <li>
+            <span class="fuentes-bold">La 7 (TV Autonómica de Murcia):</span>
+            <a
+              href="https://www.youtube.com/watch?v=B0dpt86j3IE"
+              target="_blank"
+              rel="noopener"
+              >Entrevista a María Gómez: El alma de Magoga y su reconocimiento
+              <span lang="fr"><i>Michelin</i></span></a
             >
           </li>
         </ul>
@@ -333,7 +397,7 @@
             <a
               href="https://facefoodmag.com/fotos/blog/chef-maria-gomez-arrozal-calasparra.jpg"
               target="_blank"
-              rel="noopener"
+              rel="noopener" lang="en"
               >Facefoodmag</a
             >
           </li>
@@ -349,7 +413,7 @@
             >
           </li>
         </ul>
-      </section>
+      </aside>
     </main>
 
     <!-- <footer> --->
