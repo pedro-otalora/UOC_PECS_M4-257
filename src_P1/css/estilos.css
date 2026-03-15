@@ -159,7 +159,7 @@ p {
   min-width: 220px;
   z-index: 100;
   box-shadow: var(--sombra-fuerte);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   padding: 1rem 0;
 }
 
@@ -170,12 +170,12 @@ p {
 .menu-links li {
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   padding: 0.5rem 0;
 }
 
 .menu-links a {
-  display: inline-block; 
+  display: inline-block;
   padding: 0.4rem 0.8rem;
   color: var(--color-primario-oscuro);
   text-decoration: none;
@@ -201,7 +201,7 @@ p {
     display: none;
   }
 
-.menu-links {
+  .menu-links {
     display: flex;
     flex-direction: row;
     position: static;
@@ -240,13 +240,12 @@ p {
   color: var(--color-primario-oscuro);
   text-decoration: none;
   text-transform: uppercase;
-
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 4vw, 1.6rem);
   line-height: 1.2;
 }
 
 .logo-img {
-  height: 60px;
+  height: clamp(40px, 8vw, 60px);
   width: auto;
   object-fit: contain;
 }
@@ -258,7 +257,7 @@ p {
   color: var(--color-primario);
   letter-spacing: 2;
   text-transform: none;
-  font-size: 1.4rem;
+  font-size: clamp(0.9rem, 3.5vw, 1.4rem);
 }
 
 /* ========================================
@@ -278,7 +277,7 @@ p {
   padding: 2.5rem 2.5rem;
 }
 
-.hero-index>h1 {
+.hero-index > h1 {
   color: var(--color-texto-inverso);
   margin-bottom: 1rem;
 }
@@ -293,7 +292,7 @@ p {
    HERO GENERAL
 ======================================= */
 .hero-general {
-    background: linear-gradient(
+  background: linear-gradient(
     var(--color-fondo-body),
     var(--color-fondo-blanco)
   );
@@ -422,7 +421,8 @@ p {
 .breadcrumb-nav ol {
   list-style: none;
   display: flex;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.3rem;
   margin: 0;
   padding: 0;
   font-size: 0.9rem;
