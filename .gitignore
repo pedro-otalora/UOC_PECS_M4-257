@@ -5,4 +5,4 @@ P1/*
 .parcel-cache/
 .env
 *.log
-.DS_Store
+**/.DS_Store

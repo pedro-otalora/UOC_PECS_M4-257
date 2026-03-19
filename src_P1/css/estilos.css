@@ -375,11 +375,6 @@ p {
   position: relative;
 }
 
-/* .card:hover .card-content::after {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
-} */
-
 .card h2 {
   margin-bottom: 0.5rem;
 }
