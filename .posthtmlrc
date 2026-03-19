@@ -1,6 +1,11 @@
 {
   "plugins": {
     "posthtml-include": {},
+    "posthtml-expressions": {
+      "locals": {
+        "titulo_web": "Gastronomía en femenino"
+      }
+    },
     "htmlnano": {
       "minifyCss": {},
       "minifyJs": {},
