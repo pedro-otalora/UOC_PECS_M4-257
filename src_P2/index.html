@@ -36,11 +36,21 @@
         </div>
 
         <div class="hero-index-image">
-          <img
-            src="./img/howtogym-S9NchuPb79I-unsplash.jpg?as=webp&width=800"
-            alt="Lupa negra sobre mesa de mármol blanco. HowToGym - Unspash)"
-            class="hero-index-image-clip"
-          />
+          <picture>
+            <source
+              srcset="
+                ./img/howtogym-S9NchuPb79I-unsplash.jpg?as=webp&width=600  1x,
+                ./img/howtogym-S9NchuPb79I-unsplash.jpg?as=webp&width=1200 2x,
+                ./img/howtogym-S9NchuPb79I-unsplash.jpg?as=webp&width=2400 3x
+              "
+              type="image/webp"
+            />
+            <img
+              src="./img/howtogym-S9NchuPb79I-unsplash.jpg?width=800"
+              alt="Lupa negra sobre mesa de mármol blanco. HowToGym - Unspash"
+              class="hero-index-image-clip"
+            />
+          </picture>
 
           <!-- forma para el clip-path gorroy sarten -->
           <svg width="0" height="0">
