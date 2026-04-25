@@ -4,8 +4,8 @@
   "description": "",
   "browserslist": "last 10 years, not dead",
   "scripts": {
-    "parcel:dev": "parcel src_P1/index.html --open",
-    "parcel:build": "parcel build src_P1/index.html --public-url ./",
+    "parcel:dev": "parcel src_P2/index.html --open",
+    "parcel:build": "parcel build src_P2/index.html --public-url ./",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build"
@@ -23,6 +23,7 @@
     "posthtml-expressions": "^1.11.4",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.1.3",
+    "sharp": "^0.33.5",
     "svgo": "^4.0.1",
     "terser": "^5.46.0"
   },

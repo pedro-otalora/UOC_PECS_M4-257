@@ -9,7 +9,7 @@
     "htmlnano": {
       "minifyCss": {},
       "minifyJs": {},
-      "minifySvg": {}
+      "minifySvg": false
     }
   }
 }

@@ -2,7 +2,10 @@ node_modules/
 dist/
 P1/
 P1/*
+P2/
+P2/*
 .parcel-cache/
 .env
 *.log
 **/.DS_Store
+src_P1/
