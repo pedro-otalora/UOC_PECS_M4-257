@@ -10,6 +10,7 @@
   />
 
   <source
+    media="(max-width: 767px)"
     type="image/webp"
     srcset="
       ./img/{{srcMobile}}?as=webp&width=600   600w,
@@ -19,15 +20,13 @@
     sizes="100vw"
   />
 
-  <source
-    media="(max-width: 767px)"
-    type="image/jpeg"
-    srcset="./img/{{srcMobile}}?width=600 600w"
-    sizes="100vw"
-  />
-
   <img
     src="./img/{{srcDesktop}}?width=1120"
+    srcset="
+      ./img/{{srcMobile}}?width=600 600w, 
+      ./img/{{srcDesktop}}?width=1120 1120w
+    "
+    sizes="(max-width: 767px) 100vw, (min-width: 1200px) 1120px, 90vw"
     alt="{{alt}}"
     lang="{{lang}}"
     class="{{class}}"

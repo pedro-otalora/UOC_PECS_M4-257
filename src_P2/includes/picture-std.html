@@ -13,6 +13,12 @@
 
   <img
     src="./img/{{src}}?width={{width}}"
+    srcset="
+      ./img/{{src}}?width=400   400w,
+      ./img/{{src}}?width=800   800w,
+      ./img/{{src}}?width=1200 1200w
+    "
+    sizes="{{sizes}}"
     alt="{{alt}}"
     lang="{{lang}}"
     class="{{class}}"
